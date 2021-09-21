@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll",
-    "test:staged": "jest"
+    "test": "jest --watchAll --silent --verbose --colors",
+    "test:staged": "jest --passWithNoTests --findRelatedTests"
   },
   "author": "",
   "license": "ISC",
