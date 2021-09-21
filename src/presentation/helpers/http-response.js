@@ -1,4 +1,3 @@
-const MissingParamError = require('./missing-param-error')
 const UnauthorizedError = require('./unauthorized-error.js')
 const ServerError = require('./server-error.js')
 
