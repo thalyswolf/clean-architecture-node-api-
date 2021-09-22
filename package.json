@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll --silent --verbose --colors",
-    "test:staged": "jest --passWithNoTests --findRelatedTests"
+    "test:staged": "jest --passWithNoTests --findRelatedTests",
+    "test:ci": "jest --coverage"
   },
   "author": "",
   "license": "ISC",
@@ -22,7 +23,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test:ci"
     }
   },
   "devDependencies": {
