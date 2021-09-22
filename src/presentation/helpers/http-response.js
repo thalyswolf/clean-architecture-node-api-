@@ -1,5 +1,5 @@
-const UnauthorizedError = require('./unauthorized-error.js')
-const ServerError = require('./server-error.js')
+const UnauthorizedError = require('../errors/unauthorized-error.js')
+const ServerError = require('../errors/server-error.js')
 
 module.exports = class HttpResponse {
   static badRequest (error) {
