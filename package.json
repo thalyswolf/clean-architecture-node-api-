@@ -11,9 +11,13 @@
   "author": "",
   "license": "ISC",
   "standard": {
-    "env": ["jest"]
+    "env": [
+      "jest"
+    ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "validator": "^13.6.0"
+  },
   "lint-staged": {
     "*.js": [
       "standard --fix",
